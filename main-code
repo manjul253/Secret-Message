@@ -1,3 +1,5 @@
+#!/bin/python3
+
 #instead of drawing alphabets on circle we write them down as a string
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
