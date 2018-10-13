@@ -1,0 +1,26 @@
+#instead of drawing alphabets on circle we write them down as a string
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+#key required for 'Caesar Ciphering' the message
+key = 3
+
+new_message = ''
+
+
+#Asking user for a character to encrypt
+message = input('Please enter your message: ')
+
+for character in message:
+    if character in alphabet:
+        position = alphabet.find(character)
+        #For encrypting the character we need to add key to the position of character
+        new_position = (position + key)%26
+        new_character = alphabet[new_position]
+        new_message += new_character
+        
+    else:
+        new_message += character
+
+    
+print('The encrypted message is:')
+print(new_message)
